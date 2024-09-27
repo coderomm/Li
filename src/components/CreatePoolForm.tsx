@@ -45,7 +45,7 @@ export function CreatePoolForm() {
       })
       toast.success('AMM pool created!')
     } catch (err) {
-      console.error((err as Error))
+      console.error(err)
       toast.error((err as Error).message)
     } finally {
       setIsLoading(false)
