@@ -5,7 +5,7 @@ import bs58 from 'bs58'
 
 const TOKEN_2022_PROGRAM_ID = new PublicKey('TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb');
 
-export const owner: Keypair = Keypair.fromSecretKey(bs58.decode(import.meta.env.VITE_API_PRIVATE_KEY))
+export const owner: Keypair = Keypair.fromSecretKey(bs58.decode('3g9UdAVLXw5MxBQFL3dbtbJGURRWug537N71bJKZqtLVyCgSXHxgaTGgJo8NoJkoB1Hfj7Mig2KdDb4HCx7K9Vd7'))
 // export const connection = new Connection('<YOUR_RPC_URL>') //<YOUR_RPC_URL>
 export const connection = new Connection(clusterApiUrl('devnet')) //<YOUR_RPC_URL>
 export const txVersion = TxVersion.V0 // or TxVersion.LEGACY
